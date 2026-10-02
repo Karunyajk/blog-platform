@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Blog Platform</h1>
+        <nav>
+            <button onclick="showPosts()">Home</button>
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showRegister()">Register</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="postsSection">
+            <h2>Blog Posts</h2>
+
+            <button onclick="loadPosts()">Load Posts</button>
+
+            <div id="posts"></div>
+        </section>
+
+        <section id="loginSection" style="display:none;">
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+
+            <p id="loginMessage"></p>
+        </section>
+
+        <section id="registerSection" style="display:none;">
+            <h2>Register</h2>
+
+            <input type="text" id="registerName" placeholder="Name">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+
+            <button onclick="register()">Register</button>
+
+            <p id="registerMessage"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
